@@ -1,0 +1,19 @@
+<title>Counter</title>
+
+ <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='greatnumber.css') }}">
+ </head>
+
+
+<body>
+    <div class = "wrapper">
+  <h1>Welcome to the Great Number Game!</h1>
+  <p>I am thinking of a number between 1 and 100</p>
+  <p>Take a guess!</p>
+  <form  action = '/random' , method='POST'>
+    <input name = "guess">
+  <button type="submit" formaction = "/random">SUBMIT</button>
+</form>
+</div>
+</body>
+</html>

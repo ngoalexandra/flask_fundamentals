@@ -1,0 +1,22 @@
+
+ <title>Counter</title>
+
+ <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='counter.css') }}">
+ </head>
+
+
+<body>
+    <div class = "wrapper">
+  <h1>Counter</h1>
+  <h2>{{ session['count'] }} times</h2>
+  <form>
+  <button type="submit" formaction = "/addTwo">Add Two Visits</button>
+
+  <button type="sumbit" formaction = "/reset">Reset</button>
+  </form>
+  <!-- <h3>{{'name'}}</h3>
+  <h3>{{'email'}}</h3> -->
+</div>
+</body>
+</html>

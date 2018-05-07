@@ -1,0 +1,15 @@
+*{
+    margin: auto;
+    padding: 0px;
+}
+
+.wrapper{
+    width: 500px;
+    height: 500px;
+    background-color: silver;
+    
+}
+
+.wrapper p{
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+<html>
+<title>Playground</title>
+<style>
+    * {
+        margin: auto;
+        padding: 0px;
+    }
+
+    .body {
+        background-color: white;
+        width: 1000px;
+        height: 1000px;
+    }
+
+    h1 {
+
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .body p {
+        width: 250px;
+        height: 250px;
+        background-color: skyblue;
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 60px;
+        background-color: {{colors}};
+    }
+</style>
+
+<head>
+
+    <body>
+        <div class="body">
+            <h1>Welcome!</h1>
+            <p></p>
+            <p></p>
+            <p></p>
+            {% for i in range(boxNum) %}
+            <p></p>
+            {% endfor %} down vote
+
+
+            <tr>
+                <td>col1</td>
+                <td>col2</td>
+            </tr>
+            <tr class="highlight">
+                <td>col1</td>
+                <td>col2</td>
+            </tr>
+            <tr>
+                <td>col1</td>
+                <td>col2</td>
+            </tr>
+            <tr class="highlight">
+                <td>col1</td>
+                <td>col2</td>
+            </tr>
+
+        </div>
+    </body>
+
+</html>

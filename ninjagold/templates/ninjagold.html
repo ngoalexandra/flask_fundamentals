@@ -1,0 +1,55 @@
+<html>
+
+<title>Ninja Gold</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ninjagold.css') }}">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Your Gold: {{session['gold']}}</h1>
+
+        <div class="places">
+            
+            <form class = "place" action='/process_money' , method='POST'>
+                <h2>Farm</h2>
+                <input type="hidden" name="building" value="farm">
+                <input type="submit" value="Find Gold!">
+            </form>
+
+            <form class = "place" action='/process_money' , method='POST'>
+                <h2>Cave</h2>
+                <input type="hidden" name="building" value="cave">
+                <input type="submit" value="Find Gold!">
+            </form>
+
+            <form class = "place" action='/process_money' , method='POST'>
+                <h2>House</h2>
+                <input type="hidden" name="building" value="house">
+                <input type="submit" value="Find Gold!">
+            </form>
+
+            <form class = "place" action='/process_money' , method='POST'>
+                <h2>Casino</h2>
+                <input type="hidden" name="building" value="casino">
+                <input type="submit" value="Find Gold!">
+            </form>
+        </div>
+
+        <div class="activities">
+                <label for="comment">Activities:</label>
+                <textarea class="activities" rows="5" id="comment">
+                   {% if (session['activities']|length,) > 0 %}
+                </textarea>
+              </div>
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>

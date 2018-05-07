@@ -1,0 +1,29 @@
+* {
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+
+
+}
+
+.wrapper{
+    width: 800px;
+    height: 800px;
+    background-color: silver;
+}
+/* .places{
+ 
+    padding-top: 20px;
+ width: 800px;
+ height: 800px;
+ background-color: white;
+} */
+
+.place{
+ 
+padding-top: 20px;
+ width: 150px;
+ height: 150px;
+ background-color: white;
+ display: inline-block;
+}

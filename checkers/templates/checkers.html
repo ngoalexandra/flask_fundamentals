@@ -1,0 +1,37 @@
+<html>
+<title>Checkers</title>
+<style>
+    tr:nth-child(even) td:nth-child(even),
+    tr:nth-child(odd) td:nth-child(odd) {
+        background: grey;
+        height: 60px;
+        width: 60px;
+    }
+
+    tr:nth-child(odd) td:nth-child(even),
+    tr:nth-child(even) td:nth-child(odd) {
+        background: pink;
+        height: 60px;
+        width: 60px;
+    }
+</style>
+
+<head>
+
+    <body>
+
+        <table class="chess">
+            {% for i in range (0, x) %}
+            <tr>
+                {% for i in range (0, y) %}
+                <td> </td>
+                
+                {% endfor %}
+            </tr>
+            {% endfor %}
+            
+        </table>
+
+    </body>
+
+</html>

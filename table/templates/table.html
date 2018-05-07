@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>User #</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Full Name</th>
+                    <th>Full name in upper case</th>
+                    <th>Length of name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(users|length): %}
+                <tr>
+                    <td> {{[i+1]}}</td>
+                    <td> {{users[i]['first_name']}}</td>
+                    <td>{{users[i]['last_name']}}</td>
+                    <td>{{users[i]['first_name']}} {{users[i]['last_name']}}</td>
+                    <td>{{users[i]['first_name'].upper()}} {{users[i]['last_name'].upper()}}</td>
+                    <td>{{users[i]['first_name']|length+users[i]['last_name']|length}}</td>
+                    <!-- <td>{{users[i][last_name]}}</td> -->
+
+                
+                </tr>
+                {% endfor %}
+
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
